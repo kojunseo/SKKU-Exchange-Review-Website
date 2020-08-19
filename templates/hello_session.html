@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>성균관대학교 교환학생 도우미</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/mycss.css') }}">
+        <meta name="viewport" content="width=414, height=896 initial-scale=1.0">
+    </head>
+        <div id="body"><a href = "/home"><img id="logo" src="https://i.ibb.co/cQ8xkbX/MAIN.png" width="400" align="top"></a>
+            <form action = "/search_result" method = "get">
+            <input id="text_box" input placeholder = "학교명/필요공인시험/국가명 검색" required name = "search">
+            <div class="search_bar">
+              <input class="search_button" type="submit" value="2020 교환학생 정보 검색">
+                    
+                
+                
+            </form>
+                {%if login == True %}
+                <p id="25590706-4316-44a6-afd5-2d0717189553" class=""><a href = "/mypage">{{id}} 회원정보</a> <a href = "/logout">{{id}} 로그아웃</a></p>
+                {% else %}
+                <p id="25590706-4316-44a6-afd5-2d0717189553" class=""><a href = "/login" >로그인</a> <a href = "register/None" >회원가입</a></p>
+                {% endif %}
+                <p id="25590706-4316-44a6-afd5-2d0717189553" class="">이 웹사이트는 크롬브라우저에 최적화되어 있습니다. 다른 브라우저의 경우 폰트가 깨져보일 수 있습니다</p>
+            </div>
+            <div class="footer">
+                <div class="company_info">
+                    <a href="/developers"><p>개발자정보</p></a>
+                </div>
+                
+                <div class="company_info">
+                    <a href="/version"><p>개발 버전</p></a>
+                </div>
+            </div>
+        </div>
+
+    </body
+
+</html>
